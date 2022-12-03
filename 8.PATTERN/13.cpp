@@ -1,7 +1,7 @@
 /**
- * @file 10.cpp
+ * @file 13.cpp
  * @author @roxxamay
- * @brief this is program number 10 of pattern
+ * @brief 
  * @version 0.1
  * @date 2022-12-03
  * 
@@ -14,9 +14,9 @@ using namespace std ;
 
 int main()
 {
-    int i = 1 , n ;
+    int n , i = 1 ;
 
-    cout  << "enter the number of lines : "  ;
+    cout  <<  "enter the number of lines : "  ;
     cin  >>  n  ;
 
     //calculation
@@ -24,10 +24,11 @@ int main()
     while( i <= n )
     {
         int j = 1 ;
-        while( j <= n )
+
+        while( j <= i )
         {
-            char ch =('A' + i - 1)  ;
-            cout  <<  ch  <<  " "  ;
+            char ch = ('A' + i - 1);
+            cout  << ch  <<  " " ;
             j++ ;
         }
         cout  <<  endl  ;
