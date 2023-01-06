@@ -15,6 +15,7 @@ using namespace std ;
 int main()
 {
     int num , bin[32] ,x = 0 ;
+    
     cout  << "enter the value in decimal : " ;
     cin  >> num  ;
 
