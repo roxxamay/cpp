@@ -13,15 +13,30 @@ class complex{
                 img = i ;
             }
             friend ostream & operator<<(ostream &out , complex &c);
+
+            friend istream & operator >> (istream &in ,complex &c);
 };
 
+
+
 ostream & operator<<(ostream &out , complex &c){
-    out<<c.real << "+i" << c.img ;
+    out<<c.real << " +i " << c.img ;
     return out;
 }
 
-int main(){
-    complex c(6,9);
+istream & operator >> (istream &in , complex &c){
+    cout << "enter real part : " ;
+    in >> c.real ;
 
+    cout <<"enter img part : " ;
+    in >> c.img ;
+    return in ;   
+}
+
+int main(){
+    complex c;
+    cin >> c ;
+
+    cout << "the complete object is : " ;
     cout<<c ;
 }
