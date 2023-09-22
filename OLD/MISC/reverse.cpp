@@ -18,7 +18,6 @@ int main()
 
     cout  <<  "enter the number : "  ;
     cin  >>  num  ;
-
     while( num > 0 )
     {
         rem = num % 10 ;
